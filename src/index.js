@@ -58,6 +58,8 @@ function upload(callback, encoding='UTF-8') {
     document.body.removeChild(fileInput);
 }
 
+document.getElementById('newButton').addEventListener('click', () => pnModeler.createNew());
+
 document.getElementById('openXmlButton').addEventListener('click', () => upload((data) => {
   importFromXmlFile(data);
 }));
