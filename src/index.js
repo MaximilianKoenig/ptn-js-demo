@@ -4,10 +4,7 @@ import PnModeler from "ptn-js/lib/pnmodeler/PnModeler";
 import "ptn-js/assets/pn-js.css";
 
 const pnModeler = new PnModeler({
-  container: document.querySelector('#pn-canvas'),
-  keyboard: { 
-    bindTo: document.querySelector('#pn-canvas') 
-  }
+  container: document.querySelector('#pn-canvas')
 });
 
 async function createNewDiagram(diagram) {
